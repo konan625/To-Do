@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+}
+
+.main-content {
+  width: 60%;
+}
+
+.report-section {
+  width: 25%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-color: crimson;
+  padding: 20px;
+  position: sticky; /* Keep the report fixed as the user scrolls */
+}
+
+h1 {
+  color: #333;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+button {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#taskContainer {
+  margin-top: 10px;
+}
+
+.task {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taskCheckbox {
+  margin-right: 10px;
+}
+
+.task input[type="text"] {
+  width: 300px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task input[type="time"] {
+  width: 120px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.removeBtn {
+  padding: 5px 10px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.removeBtn:hover {
+  background-color: #ff4500;
+}
+
+/* Report section styles */
+.report-section h2 {
+  margin-bottom: 10px;
+}
+
+.report-section p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Style for when the task is checked */
+.strike-through {
+  text-decoration: line-through;
+  filter: blur(2px);
+}
+
+/* Custom confirmation dialog styles */
+.confirmation-dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.confirmation-dialog p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.confirmation-dialog button {
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+#yesBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+#yesBtn:hover {
+  background-color: #45a049;
+}
+
+#noBtn {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+#noBtn:hover {
+  background-color: #ff4500;
+}

@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>hi i am todo</h1>
+    <div class="container">
+      <div class="main-content">
+        <h1>To Do List For Today - <span id="date"></span></h1>
+        <hr />
+        <button type="button" id="addTaskBtn">Add New Task +</button>
+        <div id="taskContainer"></div>
+      </div>
+      <div class="report-section">
+        <h2>Task Report</h2>
+        <hr />
+        <p>Total Tasks: <span id="totalTasks">0</span></p>
+        <p>Completed Tasks: <span id="completedTasks">0</span></p>
+        <p>Pending Tasks: <span id="pendingTasks">0</span></p>
+      </div>
+    </div>
+    <!-- Custom confirmation dialog -->
+    <div id="confirmationDialog" class="confirmation-dialog">
+      <p>Are you sure you want to remove this task?</p>
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
