@@ -157,3 +157,28 @@ button:hover {
 #noBtn:hover {
   background-color: #ff4500;
 }
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px; /* Adjust title size */
+  }
+  button {
+    width: 100%; /* Full width buttons on mobile */
+    padding: 15px;
+    font-size: 18px; /* Larger font for buttons */
+  }
+  .task input[type="text"],
+  .task input[type="time"] {
+    font-size: 16px; /* Adjust input font size */
+  }
+  .task {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+  .task input[type="text"],
+  .task input[type="time"],
+  .task .removeBtn {
+    width: 100%; /* Full width for inputs and buttons */
+  }
+}
