@@ -1,9 +1,12 @@
-// Get current date and time
-var now = new Date().toJSON().slice(0, 10).replace(/-/g, '/');
-var datetime = now.toLocaleString();
+const currentDate = new Date().toLocaleDateString('en-IN', {
+    timeZone: 'Asia/Kolkata',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+});
 
 // Insert date and time into HTML
-document.getElementById("date").innerHTML = datetime;
+document.getElementById("date").innerHTML = currentDate;
 
 // Get references to the button and task container
 const addTaskBtn = document.getElementById('addTaskBtn');
